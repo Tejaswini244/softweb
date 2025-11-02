@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Midnight Spice | Menu</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>The Midnight Spice</h1>
+    <nav>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'menu' %}" class="active">Menu</a>
+      <a href="{% url 'chefs' %}">Chefs</a>
+      <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <h2>Our Menu — Veg Fast Food, Midnight Mood</h2>
+
+    <section class="menu-section">
+      <h3>Starters</h3>
+      <div class="grid">
+        <div class="item card">
+          <img src="{% static 'images/gobi-manchurian.jpg' %}" alt="Gobi Manchurian">
+          <h4>Gobi Manchurian</h4>
+          <p>Crispy cauliflower tossed in tangy Indo-Chinese glaze</p>
+          <span class="price">₹180</span>
+        </div>
+
+        <div class="item card">
+          <img src="{% static 'images/samosa-plate.jpg' %}" alt="Samosa Chaat">
+          <h4>Samosa Chaat</h4>
+          <p>Spiced potatoes, chutneys, and crunch</p>
+          <span class="price">₹80</span>
+        </div>
+
+        <div class="item card">
+          <img src="{% static 'images/paneer-tikka.jpg' %}" alt="Paneer Tikka">
+          <h4>Paneer Tikka</h4>
+          <p>Smoky cubes, charred edges, mint chutney</p>
+          <span class="price">₹170</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h3> Mains & Buns </h3>
+      <div class="grid">
+        <div class="item card">
+          <img src="{% static 'images/pav-bhaji.jpg' %}" alt="Pav Bhaji">
+          <h4>Pav Bhaji</h4>
+          <p>Buttery pav with rich masala bhaji</p>
+          <span class="price">₹140</span>
+        </div>
+
+        <div class="item card">
+          <img src="{% static 'images/chole-bhature.jpg' %}" alt="Chole Bhature">
+          <h4>Chole Bhature</h4>
+          <p>Fluffy bhature with spicy chole</p>
+          <span class="price">₹130</span>
+        </div>
+
+        <div class="item card">
+          <img src="{% static 'images/dessert.jpg' %}" alt="Choco Lave Cake">
+          <h4>Choco Lava Cake</h4>
+          <p>Rich, creamy, finished with chocolate ash</p>
+          <span class="price">₹300</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The Midnight Spice | Taste the midnight flavor</p>
+  </footer>
+</body>
+</html>

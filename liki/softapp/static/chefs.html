@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Midnight Spice | Chefs</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>The Midnight Spice</h1>
+    <nav>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'menu' %}">Menu</a>
+      <a href="{% url 'chefs' %}" class="active">Chefs</a>
+      <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+  </header>
+
+  <main class="chefs">
+    <h2>Our Chefs</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="{% static 'images/chef1.jpg' %}" alt="Chef Meera">
+        <h3>Chef Meera</h3>
+        <p>Architect of the Gobi: smoke, crunch, and spice.</p>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/chef2.jpg' %}" alt="Chef Arjun">
+        <h3>Chef Arjun</h3>
+        <p>Master of street flavors with a midnight plating twist.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 The Midnight Spice | Craft & spice</p>
+  </footer>
+</body>
+</html>
